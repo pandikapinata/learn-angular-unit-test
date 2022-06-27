@@ -9,4 +9,8 @@ export class LoggerService {
   log(message: string) {
     this.messages.push(message);
   }
+
+  clear() {
+    this.messages = [];
+  }
 }
