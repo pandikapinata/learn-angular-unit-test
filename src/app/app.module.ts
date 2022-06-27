@@ -3,16 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { StrengthPipe } from './pipes/Strength/strength.pipe';
-
+import { PostsComponent } from './components/posts/posts.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
-  declarations: [
-    AppComponent,
-    StrengthPipe
-  ],
-  imports: [
-    BrowserModule
-  ],
+  declarations: [AppComponent, StrengthPipe, PostsComponent],
+  imports: [BrowserModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
